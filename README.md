@@ -69,9 +69,15 @@ Contributions of copied text are out of scope by charter.
 
 ## Status
 
-Early stage. Current contents are seed/template records (`author: claude-seed`)
-demonstrating the format. Human-authored items are the project's purpose;
-the seed items exist to set the bar and may be filtered out of any analysis.
+Actively growing. Every item passes the same gate before commit: human review,
+correction, and finalization against the authoring rules in SCHEMA.md. Records
+drafted with AI assistance carry a `drafted_by` field alongside the human
+`author` — drafting history is never erased, so downstream users can weight
+or filter on it:
+
+```python
+ai_assisted = ds.filter(lambda r: "drafted_by" in r and r["drafted_by"])
+```
 
 ## License
 
