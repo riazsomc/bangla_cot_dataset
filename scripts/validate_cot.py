@@ -9,7 +9,7 @@ from collections import Counter
 
 DOMAINS = {"public_health", "law", "math", "civics", "linguistics",
            "general_science", "daily_reasoning", "document_reasoning",
-           "misinformation_rebuttal"}
+           "misinformation_rebuttal", "literature"}
 REGISTERS = {"cholito", "sadhu", "mixed"}
 STEP_TYPES = {"recall", "deduce", "calculate", "eliminate", "verify"}
 ANSWER_TYPES = {"numeric", "mcq", "short_text", "yes_no"}
